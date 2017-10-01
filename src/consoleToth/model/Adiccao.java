@@ -1,14 +1,16 @@
 package consoleToth.model;
 
-import org.postgresql.jdbc.TimestampUtils;
+import java.sql.Timestamp;
+
+
 
 public class Adiccao {
 	
 	private int id;
 	private String substancia;
-	private TimestampUtils dataInicio;
-	private TimestampUtils maiorAbst;
-	private TimestampUtils tempoLimpo;
+	private Timestamp dataInicio;
+	private Timestamp maiorAbst;
+	private Timestamp tempoLimpo;
 	
 	
 	public int getId() {
@@ -23,22 +25,22 @@ public class Adiccao {
 	public void setSubstancia(String substancia) {
 		this.substancia = substancia;
 	}
-	public TimestampUtils getDataInicio() {
+	public Timestamp getDataInicio() {
 		return dataInicio;
 	}
-	public void setDataInicio(TimestampUtils dataInicio) {
+	public void setDataInicio(Timestamp dataInicio) {
 		this.dataInicio = dataInicio;
 	}
-	public TimestampUtils getMaiorAbst() {
+	public Timestamp getMaiorAbst() {
 		return maiorAbst;
 	}
-	public void setMaiorAbst(TimestampUtils maiorAbst) {
+	public void setMaiorAbst(Timestamp maiorAbst) {
 		this.maiorAbst = maiorAbst;
 	}
-	public TimestampUtils getTempoLimpo() {
+	public Timestamp getTempoLimpo() {
 		return tempoLimpo;
 	}
-	public void setTempoLimpo(TimestampUtils tempoLimpo) {
+	public void setTempoLimpo(Timestamp tempoLimpo) {
 		this.tempoLimpo = tempoLimpo;
 	}
 	

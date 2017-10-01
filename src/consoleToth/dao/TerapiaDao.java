@@ -55,7 +55,7 @@ public class TerapiaDao {
 		case 0://	TODOS
 			break;
 		case 1://	ID
-			query = query  + " where " +  _terapia.getId()  ; 
+			query = query  + " where id = " +  _terapia.getId()  ; 
 			break;
 		case 2://	NOME
 			query = query  + " where nome like '%" +  _terapia.getNome()      + "%'"; 

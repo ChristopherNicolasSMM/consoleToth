@@ -17,6 +17,8 @@ public class main {
 		//testePaciente.executar();
 		//UsuarioConsole testeUsuario = new UsuarioConsole();
 		//testeUsuario.executar();
+		 AdiccaoConsole testeAdiccao = new AdiccaoConsole();
+		 testeAdiccao.executar();
 
 	 }
 	

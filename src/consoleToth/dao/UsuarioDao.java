@@ -51,7 +51,7 @@ private Connection con = Conexao.getConnection();
 		case 0://	TODOS
 			break;
 		case 1://	ID
-			query = query  + " where " +  _usuario.getId()  ; 
+			query = query  + " where id = " +  _usuario.getId()  ; 
 			break;
 		case 2://	NOME
 			query = query  + " where nome like '%" +  _usuario.getNome()      + "%'"; 
