@@ -30,11 +30,11 @@ public class AdiccaoConsole {
 			//METODOS
 			public static void salvar() {
 				Adiccao _adiccao = new Adiccao();
-				_adiccao.setId(10);
-				_adiccao.setSubstancia("console-10");
-				_adiccao.setDataInicio(Timestamp.valueOf("20/01/2017"));
-				_adiccao.setMaiorAbst(Timestamp.valueOf("20/01/2017"));
-				_adiccao.setTempoLimpo(Timestamp.valueOf("20/01/2017"));
+				_adiccao.setId(4);
+				_adiccao.setSubstancia("console-30");
+				_adiccao.setDataInicio(Timestamp.valueOf("2017-02-10" + " 00:00:00"));
+				_adiccao.setMaiorAbst(Timestamp.valueOf("2017-02-20" + " 00:00:00"));
+				_adiccao.setTempoLimpo(Timestamp.valueOf("2017-02-20" + " 00:00:00"));
 				AdiccaoDao dao = new AdiccaoDao();
 				dao.salva(_adiccao);
 				

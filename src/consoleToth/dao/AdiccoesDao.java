@@ -14,21 +14,12 @@ private Connection con = Conexao.getConnection();
 	
 	// SALVAR DINAMICO
 	public void salva(Adiccoes adiccoes){
-		String query ="";
 		
-		if(adiccoes.getId() > 0) {
-			
-			query = "update adiccoes set paciente_id = ?, adiccao_id = ?,  where id = " + adiccoes.getId();	
-		}
-		else {
-			query = "insert into adiccoes (paciente_id, adiccao_id) "
-					+ "values (?, ?)";
-		}
+		String query = "insert into adiccoes (paciente_c, adiccao_id) values (?, ?)";
 
 		try{
 			
 			PreparedStatement preparador = con.prepareStatement(query);
-			
 			preparador.setInt(1, adiccoes.getPacienteId());
 			preparador.setInt(2, adiccoes.getAdiccaoId());
 			preparador.execute();
@@ -51,7 +42,7 @@ private Connection con = Conexao.getConnection();
 			query = query  + " where  id = " +  _adiccoes.getId(); 
 			break;
 		case 2://	PACIENTE
-			query = query  + " where paciente_id = " +  _adiccoes.getPacienteId(); 
+			query = query  + " where paciente_c = " +  _adiccoes.getPacienteId(); 
 			break;
 		case 3://	ADICCAO
 			query = query  + " where adiccao_id = " +  _adiccoes.getAdiccaoId(); 
@@ -69,8 +60,8 @@ private Connection con = Conexao.getConnection();
 				
 				Adiccoes adiccoes = new Adiccoes();
 				adiccoes.setId(resultado.getInt("id"));
-				adiccoes.setId(resultado.getInt("pacienteId"));
-				adiccoes.setId(resultado.getInt("adiccaoId"));
+				adiccoes.setPacienteId(resultado.getInt("paciente_c"));
+				adiccoes.setAdiccaoId(resultado.getInt("adiccao_id"));
 
 				lista.add(adiccoes);
 				

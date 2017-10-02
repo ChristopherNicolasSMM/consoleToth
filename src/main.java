@@ -2,7 +2,6 @@ import java.util.List;
 import consoleToth.dao.*;
 import consoleToth.model.*;
 import consoleToth.testaConsole.*;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,8 +16,12 @@ public class main {
 		//testePaciente.executar();
 		//UsuarioConsole testeUsuario = new UsuarioConsole();
 		//testeUsuario.executar();
-		 AdiccaoConsole testeAdiccao = new AdiccaoConsole();
-		 testeAdiccao.executar();
+		//AdiccaoConsole testeAdiccao = new AdiccaoConsole();
+		//testeAdiccao.executar();
+		//AdiccoesConsole testeAdiccoes = new AdiccoesConsole();
+		//testeAdiccoes.executar();
+		//SessaoConsole testeSessao = new SessaoConsole();
+		//testeSessao.executar();
 
 	 }
 	

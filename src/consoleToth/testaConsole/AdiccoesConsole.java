@@ -28,9 +28,8 @@ public class AdiccoesConsole {
 			//METODOS
 			public static void salvar() {
 				Adiccoes _adiccoes = new Adiccoes();
-				//_adiccoes.setId(2);
 				_adiccoes.setPacienteId(1);
-				_adiccoes.setAdiccaoId(1);
+				_adiccoes.setAdiccaoId(2);
 				AdiccoesDao dao = new AdiccoesDao();
 				dao.salva(_adiccoes);
 				

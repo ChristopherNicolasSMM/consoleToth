@@ -71,9 +71,9 @@ public class AdiccaoDao {
 				Adiccao adiccao = new Adiccao();
 				adiccao.setId(resultado.getInt("id"));
 				adiccao.setSubstancia(resultado.getString("substancia"));
-				adiccao.setDataInicio(resultado.getTimestamp("dataInicio"));
-				adiccao.setMaiorAbst(resultado.getTimestamp("maiorAbst"));
-				adiccao.setTempoLimpo(resultado.getTimestamp("tempoLimpo"));
+				adiccao.setDataInicio(resultado.getTimestamp("data_inicio"));
+				adiccao.setMaiorAbst(resultado.getTimestamp("maior_abst"));
+				adiccao.setTempoLimpo(resultado.getTimestamp("tempo_limpo"));
 				lista.add(adiccao);
 				
 			}
